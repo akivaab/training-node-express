@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const PORT = process.env.PORT || 5000;
-mongoose.connect(process.env.DB_URI, { dbName: "CrudBlogDB" });
+mongoose.connect(process.env.DB_URI);
 
 const app = express();
 
@@ -14,4 +14,6 @@ app.use(express.json());
 
 app.use("/posts", require("./routes/postsRoute"));
 
-app.listen(PORT);
+mongoose.connection.once("open", () => {
+  app.listen(PORT);
+});
