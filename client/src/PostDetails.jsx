@@ -17,8 +17,6 @@ function PostDetails({ posts, onDelete, onUpdate }) {
 
   const baseURL = "http://localhost:5000/posts";
 
-  // posts.find((p) => p._id === id);
-
   useEffect(() => {
     const getPost = async () => {
       try {
