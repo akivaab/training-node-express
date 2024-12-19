@@ -15,7 +15,7 @@ function PostDetails({ posts, onDelete, onUpdate }) {
   const [author, setAuthor] = useState(post?.author || "");
   const [body, setBody] = useState(post?.body || "");
 
-  const baseURL = "http://localhost:5000/posts";
+  const baseURL = `${import.meta.env.VITE_API_URL}/posts`;
 
   useEffect(() => {
     const getPost = async () => {

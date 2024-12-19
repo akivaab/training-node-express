@@ -13,7 +13,7 @@ function App() {
   const [posts, setPosts] = useState(null);
   const [error, setError] = useState(null);
 
-  const baseURL = "http://localhost:5000/posts";
+  const baseURL = `${import.meta.env.VITE_API_URL}/posts`;
 
   useEffect(() => {
     const getPosts = async () => {
