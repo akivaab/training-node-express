@@ -17,12 +17,14 @@ Or, you can download the ZIP file from the GitHub page.
 #### Add .env Files
 
 Once you’ve cloned or downloaded the repository, you must add a .env file in both the server and client directories. There are .env.example files in both directories explaining what environment variables must be added.
-[server/.env example](server/.env.example)
-[client/.env example](client/.env.example)
+
+- [server/.env example](server/.env.example)
+- [client/.env example](client/.env.example)
 
 #### Run Server and Client
 
 Once the .env files are added, open two instances of the terminal and navigate to the root directory of the repository in both.
+
 Enter the following commands in the first terminal:
 
 ```
