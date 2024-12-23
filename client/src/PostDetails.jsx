@@ -62,7 +62,9 @@ function PostDetails({ posts, onDelete, onUpdate }) {
   return (
     <div className="mx-auto max-w-3xl p-4 text-left">
       {isLoading && (
-        <h2 className="pt-4 text-center text-3xl text-slate-800">Loading...</h2>
+        <h2 className="pt-4 text-center font-mono text-4xl font-semibold text-green-900">
+          Loading...
+        </h2>
       )}
       {!isLoading && isUpdating && (
         <div>

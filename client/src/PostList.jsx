@@ -27,7 +27,9 @@ function PostList({ posts }) {
         </h2>
       )}
       {!posts && (
-        <h2 className="pt-4 text-center text-3xl text-slate-800">Loading...</h2>
+        <h2 className="pt-4 text-center font-mono text-4xl font-semibold text-green-900">
+          Loading...
+        </h2>
       )}
     </div>
   );
